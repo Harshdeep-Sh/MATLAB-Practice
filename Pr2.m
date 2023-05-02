@@ -1,0 +1,10 @@
+w=1500;
+r=5;
+l=10;
+theta=(0:0.01:2*pi);
+va=w*r*(cosd(theta)+r*cosd(2.*theta)/2*l);
+max_speed=max(va)
+figure(1)
+plot(theta,va)
+xlabel("theta")
+ylabel("Va")
